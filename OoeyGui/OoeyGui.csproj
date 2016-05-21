@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\ContainerElement.cs" />
+    <Compile Include="Containers\Panel.cs" />
+    <Compile Include="Containers\ScrollPanel.cs" />
+    <Compile Include="Containers\StackPanel.cs" />
     <Compile Include="Enums\HorizontalAlignment.cs" />
     <Compile Include="Elements\Label.cs" />
     <Compile Include="OoeyGui.cs" />
@@ -48,9 +51,7 @@
     <Compile Include="Base\UiElement.cs" />
     <Compile Include="Enums\VerticalAlignment.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Containers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ExtendedConsole\ExtendedConsole\ExtendedConsole.csproj">
       <Project>{848f2b55-5518-4dbb-b574-2fe4824f15ae}</Project>

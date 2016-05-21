@@ -18,10 +18,14 @@ namespace OoeyGui {
             _text = text;
         }
 
+        public Label(short x, short y, short height, int z, FormattedString text) : base(x, y, (short) text.Length, height, z) {
+            _text = text;
+        }
+
         #endregion Constructors
 
         #region Properties
-        
+
         public FormattedString Text
         {
             get { return _text; }
@@ -38,6 +42,7 @@ namespace OoeyGui {
 
         public override void Repaint(bool force) {
             if (!force && !Dirty) return;
+            base.Repaint(force);
 
             var c = DefaultChar;
             var len = Math.Min(_text.Length, Width);

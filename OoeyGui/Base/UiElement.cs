@@ -5,7 +5,7 @@ namespace OoeyGui.Base {
     public abstract class UiElement {
         #region Fields
 
-        private bool _dirty;
+        private bool _dirty=true;
 
         protected bool Dirty {
             get { return _dirty; }
@@ -116,6 +116,8 @@ namespace OoeyGui.Base {
         public SmallRect BoundingRect => new SmallRect(X, Y, (short) (X+Width), (short) (Y+Height));
 
         public CharInfo DefaultChar => _defaultChar;
+
+        public Coord Location => new Coord(X, Y);
 
         #endregion Properties
 
