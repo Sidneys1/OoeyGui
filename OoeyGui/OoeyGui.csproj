@@ -49,13 +49,13 @@
     <Compile Include="Enums\VerticalAlignment.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExtendedConsole\ExtendedConsole.csproj">
+    <Folder Include="Containers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExtendedConsole\ExtendedConsole\ExtendedConsole.csproj">
       <Project>{848f2b55-5518-4dbb-b574-2fe4824f15ae}</Project>
       <Name>ExtendedConsole</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Containers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
