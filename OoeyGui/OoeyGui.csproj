@@ -44,6 +44,8 @@
     <Compile Include="Containers\Panel.cs" />
     <Compile Include="Containers\ScrollPanel.cs" />
     <Compile Include="Containers\StackPanel.cs" />
+    <Compile Include="Elements\DoubleProgressBar.cs" />
+    <Compile Include="Elements\ProgressBar.cs" />
     <Compile Include="Enums\HorizontalAlignment.cs" />
     <Compile Include="Elements\Label.cs" />
     <Compile Include="OoeyGui.cs" />

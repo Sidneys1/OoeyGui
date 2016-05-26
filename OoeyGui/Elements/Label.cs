@@ -3,22 +3,22 @@ using ExtendedConsole;
 using OoeyGui.Base;
 
 namespace OoeyGui {
-
     public class Label : UiElement {
-
         #region Fields
-        
+
         private FormattedString _text;
 
         #endregion Fields
 
         #region Constructors
 
-        public Label(short x, short y, short width, short height, int z, FormattedString text) : base(x, y, width, height, z) {
+        public Label(short x, short y, short width, short height, int z, FormattedString text)
+            : base(x, y, width, height, z) {
             _text = text;
         }
 
-        public Label(short x, short y, short height, int z, FormattedString text) : base(x, y, (short) text.Length, height, z) {
+        public Label(short x, short y, short height, int z, FormattedString text)
+            : base(x, y, (short) text.Length, height, z) {
             _text = text;
         }
 
@@ -26,16 +26,16 @@ namespace OoeyGui {
 
         #region Properties
 
-        public FormattedString Text
-        {
+        public FormattedString Text {
             get { return _text; }
-            set
-            {
+            set {
                 _text = value;
+                if (!Dirty)
+                    ParentContainer?.Invalidate(BoundingRect);
                 Dirty = true;
             }
         }
-        
+
         #endregion Properties
 
         #region Methods
