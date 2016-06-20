@@ -1,3 +1,5 @@
 [submodule "ExtendedConsole"]
 	path = ExtendedConsole
 	url = https://github.com/Sidneys1/ExtendedConsole.git
+[submodile "ExtendedConsole"]
+	branch = master
